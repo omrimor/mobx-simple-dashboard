@@ -1,0 +1,4 @@
+{
+  "usersApi" : "https://apistage.worldmate.com/users",
+  "hotelsApi": "https://apistage.worldmate.com/hotel-hub-service"
+}

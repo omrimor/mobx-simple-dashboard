@@ -1,0 +1,110 @@
+.table {
+  &.table-unstyled{
+
+    tr.add-stripes:nth-child(odd) {
+      background-color: #f3f3f3;
+    }
+
+    tr {
+      td {
+        vertical-align: middle;
+        border-top: none;
+        padding: 0;
+      }
+      td.featureCol {
+        padding: 0 10px;
+      }
+    }
+  }
+
+  .btn {
+    position: relative;
+    border-radius: 0;
+    &:focus,
+    &:focus:active {
+      outline: none;
+    }
+    &.in-progress {
+      //background-color: #fcf8e3;
+      //border-bottom: 0;
+      overflow: hidden;
+      &:before {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: #eea236;
+        animation: loading 1.6s linear infinite;
+      }
+    }
+  }
+
+  td>span{
+    &.btn {
+      cursor: default;
+      -ms-touch-action: none;
+      touch-action: none;
+      -webkit-user-select: auto;
+      -moz-user-select: auto;
+      -ms-user-select: auto;
+      user-select: auto;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+    &.btn-success:hover
+    {
+      background-color: #5cb85c;
+      border-color: #4cae4c;
+    }
+    &.btn-danger:hover
+    {
+      background-color: #d9534f;
+      border-color: #d43f3a;
+    }
+  }
+  td .status {
+    display: block;
+    padding: 0;
+    border-radius: 0;
+    font-size: 13px;
+    font-weight: bold;
+    border-bottom: solid 2px;
+    position: relative;
+    &.completed {
+      background-color:#dff0d8;
+      border-color:#4cae4c;
+    }
+    &.failed {
+      background-color:#f2dede;
+      border-color:#d43f3a;
+    }
+    &.in-progress {
+      background-color: #fcf8e3;
+      border-bottom: 0;
+      overflow: hidden;
+      &:before{
+        display: block;
+        position: absolute;
+        left:0;
+        right:0;
+        bottom: 0;
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: #eea236;
+        animation: loading 1.8s linear infinite;
+      }
+    }
+
+  }
+}
+
+@keyframes loading {
+  from {left: -200px; width: 30%;}
+  50% {left: 0;width: 50%;}
+  to {left: 200px;width: 30%;}
+}

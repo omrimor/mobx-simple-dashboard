@@ -1,0 +1,5 @@
+{
+  "usersApi" : "https://api.worldmate.com/users",
+  "hotelsApi": "https://api.worldmate.com/hotel-hub-service"
+
+}

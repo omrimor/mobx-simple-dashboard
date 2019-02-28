@@ -1,0 +1,19 @@
+footer {
+  background-color: #fff;
+  color: #000;
+}
+.autobot {
+  top: 5px;
+  width: 15px;
+  display: inline-block;
+  margin: 0 5px;
+  &:hover {
+    animation: pulse 5s ease-out infinite;
+  }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}

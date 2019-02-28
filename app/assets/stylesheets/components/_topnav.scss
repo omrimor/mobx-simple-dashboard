@@ -1,0 +1,16 @@
+.navbar  {
+    height: 70px;
+    .navbar-brand {
+        vertical-align: middle;
+        padding: 10px 15px;
+        >img.logo {
+            margin-right: 15px;
+            display: inline-block;
+        }
+        h1 {
+            line-height: 50px;
+            font-size: 24px;
+        }
+    }
+}
+
